@@ -461,12 +461,11 @@
                     setTimeout(function () {
                         var width = $(".fancybox-inner").width();
                         if (width) {
-                            var height = parseInt((width * 9) / 16);
+                            var height = parseInt((width * 27) / 16);
                             height = height.toString() + 'px';
                             $(".fancybox-inner").css('height', height);
                             $(".noscroll ").css('height', height);
                         }
-
                     }, 1000);
                 }
             });
