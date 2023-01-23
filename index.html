@@ -16,10 +16,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
 
-        html {
+        /* html {
             height: 100%;
             min-height: 800px;
-        }
+        } */
 
         body {
             /*background: url('https://i.pinimg.com/originals/48/79/86/487986c17560a8ed1afdc55e480e5be2.png');*/
@@ -286,6 +286,11 @@
             background: #f4f4f4;
             margin: 0px;
         }
+        .temp-div:hover,.temp-div .utype-temp:hover
+        {
+            background: #fb0;
+        }
+        
     </style>
 </head>
 
@@ -293,6 +298,14 @@
 
 
     <div class="wizard" id="wizard">
+        <h2>Step-</h2>
+        <section>
+         
+                <h3 class="text-center">Select Portfolio Type</h3>
+           
+
+
+        </section>
         <h2>Step-</h2>
         <section>
             <div class="container">
@@ -304,23 +317,22 @@
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">Free</div>
-                                    <div class="card-body">
-                                        <a href="view/template/t2/index.html" class="ifmodemy">
-                                            <img src="image/p1.png" height="100%" width="100%">
+                                    <div class="card-body temp-div">
+                                        <a href="javascript:void(0);" class="utype-temp">
+                                            <img  src="image/p1.png" height="100%" width="100%">
                                         </a>
                                     </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn btn-success">Demo</button>
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">Free</div>
-                                    <div class="card-body">
-                                        <a href="view/template/t1/index.html" class="ifmodemy">
-                                            <img src="https://sportsmatik.com/uploads/blog/posts/karan-kapoor4_1655106655.jpg"
-                                                height="100%" width="100%">
+                                    <div class="card-body temp-div">
+                                        <a href="javascript:void(0);" class="utype-temp">
+                                            <img  src="image/p1.png" height="100%" width="100%">
                                         </a>
                                     </div>
                                     <div class="card-footer text-center">
@@ -331,39 +343,58 @@
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">Free</div>
-                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-body temp-div">
+                                        <a href="javascript:void(0);" class="utype-temp">
+                                            <img  src="image/p1.png" height="100%" width="100%">
+                                        </a>
+                                    </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn btn-success">Demo</button>
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">Free</div>
-                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-body temp-div">
+                                        <a href="javascript:void(0);" class="utype-temp">
+                                            <img  src="image/p1.png" height="100%" width="100%">
+                                        </a>
+                                    </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn btn-success">Demo</button>
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">Free</div>
-                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-body temp-div">
+                                        <a href="javascript:void(0);" class="utype-temp">
+                                            <img  src="image/p1.png" height="100%" width="100%">
+                                        </a>
+                                    </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn btn-success">Demo</button>
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="card">
                                     <div class="card-header">Free</div>
-                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-body temp-div">
+                                        <a href="javascript:void(0);" class="utype-temp">
+                                            <img  src="image/p1.png" height="100%" width="100%">
+                                        </a>
+                                    </div>
                                     <div class="card-footer text-center">
-                                        <button class="btn btn-success">Demo</button>
+                                        <a href="view/template/t1/index.html" class="btn btn-success ifmodemy">Demo</a>
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                    
 
                         </div>
                     </div>
@@ -374,7 +405,7 @@
         <h2>Step-</h2>
         <section>
 
-            <p>Address</p>
+            <h3 class="text-center">Basic information</h3>
             <input type="text" placeholder="Street, nbr" />
             <input type="text" placeholder="City" />
             <input type="text" placeholder="Postcode" />
@@ -383,7 +414,7 @@
         <h2>Step-</h2>
         <section>
 
-            <p>Contact information</p>
+            <h3>Education information</h3>
             <input type="text" placeholder="Email address" />
             <input type="text" placeholder="Phone" />
             <input type="text" placeholder="Mobile" />
@@ -391,13 +422,13 @@
         <h2>Step-</h2>
         <section>
 
-            <p>Application</p>
+            <h3 class="text-center">Experience information</h3>
             <input type="text" placeholder="Preferred entrance date" />
             <input type="text" placeholder="Number of people" />
         </section>
         <h2>Step-</h2>
         <section>
-            <p>General condtitions</p>
+            <h3 class="text-center">Add Your Skills</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -457,17 +488,18 @@
                 heigth: 600,
                 maxWidth: 1400,
                 maxHeight: 600,
-                afterLoad: function () {
-                    setTimeout(function () {
-                        var width = $(".fancybox-inner").width();
-                        if (width) {
-                            var height = parseInt((width * 27) / 16);
-                            height = height.toString() + 'px';
-                            $(".fancybox-inner").css('height', height);
-                            $(".noscroll ").css('height', height);
-                        }
-                    }, 1000);
-                }
+                // afterLoad: function () {
+                //     setTimeout(function () {
+                //         var width = $(".fancybox-inner").width();
+                //         if (width) {
+                //             var height = parseInt((width * 27) / 16);
+                //             height = height.toString() + 'px';
+                //             $(".fancybox-inner").css('height', height);
+                //             $(".noscroll ").css('height', height);
+                //         }
+
+                //     }, 1000);
+                // }
             });
 
     });
