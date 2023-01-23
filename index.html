@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 
@@ -34,7 +35,7 @@
             user-select: none;
         }
 
-        .wizard.vertical > .steps {
+        .wizard.vertical>.steps {
             float: none;
             display: inline-block;
             text-align: center;
@@ -45,7 +46,7 @@
             margin: 0px;
         }
 
-        .wizard.vertical > .actions {
+        .wizard.vertical>.actions {
             float: none;
             display: inline-block;
             text-align: center;
@@ -61,16 +62,6 @@
             padding-top: 0;
             margin-top: 0;
             font-family: 'Roboto Slab', serif;
-        }
-          .wizard.vertical>.content {
-            float: none;
-            display: inline-block;
-            text-align: center;
-            width: 1200px;
-            border-radius: 15px;
-            padding: 0px;
-            background: #f4f4f4;
-            margin: 0px;
         }
 
         #svg_form_time {
@@ -133,7 +124,7 @@
             margin-top: 0;
         }
 
-        .wizard.vertical > .steps > ul {
+        .wizard.vertical>.steps>ul {
             float: left !important;
             width: 100%;
         }
@@ -146,7 +137,7 @@
             display: inline;
         }
 
-        .wizard.vertical > .actions {
+        .wizard.vertical>.actions {
             width: 100%;
             background: #fafafa;
         }
@@ -157,34 +148,34 @@
         /*width: 65%;*/
         /*text-align: center;*/
         /*}*/
-        .wizard > .actions {
+        .wizard>.actions {
             position: relative;
             display: block;
             text-align: right;
             width: 100%;
         }
 
-        .wizard.vertical > .actions {
+        .wizard.vertical>.actions {
             display: inline;
             float: left;
             width: 100%;
             text-align: center;
         }
 
-        .wizard > .actions > ul {
+        .wizard>.actions>ul {
             display: inline-block;
             text-align: right;
         }
 
-        .wizard > .actions > ul > li {
+        .wizard>.actions>ul>li {
             margin: 0 0.5em;
         }
 
-        .wizard.vertical > .actions > ul > li {
+        .wizard.vertical>.actions>ul>li {
             margin: 0;
         }
 
-        .wizard > .actions a {
+        .wizard>.actions a {
             display: inline-block;
             border-radius: 25px;
             color: #0095D9;
@@ -196,63 +187,73 @@
             background: transparent;
         }
 
-        .wizard > .actions a:hover,
-        .wizard > .actions a:active,
-        .wizard > .actions a:focus {
+        .wizard>.actions a:hover,
+        .wizard>.actions a:active,
+        .wizard>.actions a:focus {
             color: #fff;
             background: #0095D9;
             border: 1px solid #0095D9;
         }
 
-        .wizard > .actions .disabled a {
+        .wizard>.actions .disabled a {
             color: #0095D9;
             background: transparent;
         }
 
-        .wizard > .actions .disabled a:hover,
-        .wizard > .actions .disabled a:active {
+        .wizard>.actions .disabled a:hover,
+        .wizard>.actions .disabled a:active {
             color: #fff;
             background: #0095D9;
         }
 
-        .wizard ul, .tabcontrol ul {
+        .wizard ul,
+        .tabcontrol ul {
             list-style: none !important;
             padding: 0;
             float: none;
             margin: 0;
         }
 
-        .wizard > .actions {
+        .wizard>.actions {
             position: relative;
             display: block;
             text-align: right;
             width: 100%;
         }
 
-        .wizard > .actions > ul {
+        .wizard>.actions>ul {
             text-align: center;
             display: inline-flex;
             text-align: right;
         }
 
-        .wizard > .steps .current-info, .tabcontrol > .steps .current-info {
+        .wizard>.steps .current-info,
+        .tabcontrol>.steps .current-info {
             display: none;
         }
 
-        .wizard > .steps .current a {
+        .wizard>.steps .current a {
             background: #ff966a;
         }
 
-        .wizard > .steps .current-info, .tabcontrol > .steps .current-info {
+        .wizard>.steps .current-info,
+        .tabcontrol>.steps .current-info {
             position: absolute;
             left: -999em;
         }
 
-        .wizard.vertical > .steps:before, .wizard .steps ul li:after, .wizard .steps ul li.done:after, .wizard .steps ul li.current:after {
+        .wizard.vertical>.steps:before,
+        .wizard .steps ul li:after,
+        .wizard .steps ul li.done:after,
+        .wizard .steps ul li.current:after {
             content: none;
         }
 
-        .wizard.vertical > .steps:before, .wizard .steps ul li:after, .wizard .steps ul li.done:after, .wizard .steps ul li.current:after, .steps ul li.number:after {
+        .wizard.vertical>.steps:before,
+        .wizard .steps ul li:after,
+        .wizard .steps ul li.done:after,
+        .wizard .steps ul li.current:after,
+        .steps ul li.number:after {
             content: none;
         }
 
@@ -267,131 +268,146 @@
             z-index: -1;
         }
 
-        .wizard > .steps .done a {
+        .wizard>.steps .done a {
             background: #4caf50;
         }
 
         .card {
             margin: 10px;
         }
+
+        .wizard.vertical>.content {
+            float: none;
+            display: inline-block;
+            text-align: center;
+            width: 1200px;
+            border-radius: 15px;
+            padding: 0px;
+            background: #f4f4f4;
+            margin: 0px;
+        }
     </style>
 </head>
+
 <body>
 
 
-<div class="wizard" id="wizard">
-    <h2>Step-</h2>
-    <section>
-        <div class="container">
-            <h3 class="text-center">Select Your Template</h3>
-            <div class="row">
-                <div class="col-md-12">
+    <div class="wizard" id="wizard">
+        <h2>Step-</h2>
+        <section>
+            <div class="container">
+                <h3 class="text-center">Select Your Template</h3>
+                <div class="row">
+                    <div class="col-md-12">
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body">
-                                    <a href="view/template/t2/index.html" class="ifmodemy">
-                                        <img src="image/p1.png" height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">Demo</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body">
-                                    <a href="view/template/t1/index.html" class="ifmodemy">
-                                        <img src="https://sportsmatik.com/uploads/blog/posts/karan-kapoor4_1655106655.jpg"
-                                             height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer">
-                                    <a href="view/template/t1/index.html" class="btn btn-success ifmodemy">Demo</a>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body">
+                                        <a href="view/template/t2/index.html" class="ifmodemy">
+                                            <img src="image/p1.png" height="100%" width="100%">
+                                        </a>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-success">Demo</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">Demo</button>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body">
+                                        <a href="view/template/t1/index.html" class="ifmodemy">
+                                            <img src="https://sportsmatik.com/uploads/blog/posts/karan-kapoor4_1655106655.jpg"
+                                                height="100%" width="100%">
+                                        </a>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a href="view/template/t1/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">Demo</button>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-success">Demo</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">Demo</button>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-success">Demo</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
-                                <div class="card-footer">
-                                    <button class="btn btn-success">Demo</button>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-success">Demo</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body"><img src="image/p1.png" height="100%" width="100%"></div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-success">Demo</button>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
                     </div>
                 </div>
-            </div>
 
 
-    </section>
-    <h2>Step-</h2>
-    <section>
+        </section>
+        <h2>Step-</h2>
+        <section>
 
-        <p>Address</p>
-        <input type="text" placeholder="Street, nbr"/>
-        <input type="text" placeholder="City"/>
-        <input type="text" placeholder="Postcode"/>
-        <input type="text" placeholder="Country"/>
-    </section>
-    <h2>Step-</h2>
-    <section>
+            <p>Address</p>
+            <input type="text" placeholder="Street, nbr" />
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="Postcode" />
+            <input type="text" placeholder="Country" />
+        </section>
+        <h2>Step-</h2>
+        <section>
 
-        <p>Contact information</p>
-        <input type="text" placeholder="Email address"/>
-        <input type="text" placeholder="Phone"/>
-        <input type="text" placeholder="Mobile"/>
-    </section>
-    <h2>Step-</h2>
-    <section>
+            <p>Contact information</p>
+            <input type="text" placeholder="Email address" />
+            <input type="text" placeholder="Phone" />
+            <input type="text" placeholder="Mobile" />
+        </section>
+        <h2>Step-</h2>
+        <section>
 
-        <p>Application</p>
-        <input type="text" placeholder="Preferred entrance date"/>
-        <input type="text" placeholder="Number of people"/>
-    </section>
-    <h2>Step-</h2>
-    <section>
-        <p>General condtitions</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
-    </section>
-</div>
+            <p>Application</p>
+            <input type="text" placeholder="Preferred entrance date" />
+            <input type="text" placeholder="Number of people" />
+        </section>
+        <h2>Step-</h2>
+        <section>
+            <p>General condtitions</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.</p>
+        </section>
+    </div>
 
 
 </body>
@@ -431,8 +447,8 @@
             showCloseButton: false,
 
         });
-        $(".ifmode").fancybox({type: 'iframe'});
-        $(".feedbackbox").fancybox({type: 'iframe', scrolling: 'no', maxWidth: 800, maxHeight: 800, minHeight: 400});
+        $(".ifmode").fancybox({ type: 'iframe' });
+        $(".feedbackbox").fancybox({ type: 'iframe', scrolling: 'no', maxWidth: 800, maxHeight: 800, minHeight: 400 });
         $(".ifmodemy").fancybox(
             {
                 type: 'iframe',
@@ -458,4 +474,5 @@
     });
 
 </script>
+
 </html>
