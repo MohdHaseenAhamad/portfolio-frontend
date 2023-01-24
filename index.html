@@ -106,7 +106,7 @@
         /*}*/
         .steps-form-div {
             padding: 0px;
-            max-width: 38%;
+            max-width: 60%;
             margin: 25px auto;
             background: white;
             background: rgba(255, 255, 255, 0.9);
@@ -116,7 +116,21 @@
             border-radius: 5px;
             transition: transform 0.2s ease-in-out;
         }
-        @media only screen and (max-width: 480px){
+
+        .steps-template-div {
+            padding: 0px;
+            max-width: 100%;
+            margin: 25px auto;
+            background: white;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 5% 5% 10%;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        @media only screen and (max-width: 480px) {
 
             .steps-form-div {
                 padding: 0px;
@@ -132,20 +146,21 @@
                 transition: transform 0.2s ease-in-out;
             }
         }
+
         /*@media screen and (min-width: 480px) {*/
-            /*.steps-form-div {*/
-                /*padding: 0px;*/
-                /*max-width: 100%;*/
-                /*height: auto;*/
-                /*margin: 30px auto;*/
-                /*background: white;*/
-                /*background: rgba(255, 255, 255, 0.9);*/
-                /*backdrop-filter: blur(10px);*/
-                /*padding: 5% 5% 10%;*/
-                /*box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);*/
-                /*border-radius: 5px;*/
-                /*transition: transform 0.2s ease-in-out;*/
-            /*}*/
+        /*.steps-form-div {*/
+        /*padding: 0px;*/
+        /*max-width: 100%;*/
+        /*height: auto;*/
+        /*margin: 30px auto;*/
+        /*background: white;*/
+        /*background: rgba(255, 255, 255, 0.9);*/
+        /*backdrop-filter: blur(10px);*/
+        /*padding: 5% 5% 10%;*/
+        /*box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);*/
+        /*border-radius: 5px;*/
+        /*transition: transform 0.2s ease-in-out;*/
+        /*}*/
         /*}*/
 
 
@@ -339,6 +354,10 @@
         /*width: 100%;*/
         /*padding: 5% 40% 10%;*/
         /*}*/
+        label {
+            display: flex;
+            margin-bottom: 0.5rem;
+        }
     </style>
 </head>
 
@@ -353,11 +372,11 @@
             <div class="form-group">
                 <label for="portfolio_type" class="control-label">Select Portfolio Type<span class="required"
                                                                                              aria-required="true">*</span></label>
-                <select class="form-control" name="profilecnt" id="portfolio_type">
-                    <option value="">Select Country</option>
-                    <option value="1" data-iso="AF" data-isd="93">Afghanistan</option>
-                    <option value="236" data-iso="RS" data-isd="381">Serbia</option>
-                    <option value="238" data-iso="ZM" data-isd="260">Zambia</option>
+                <select class="form-control" name="portfolio_type" id="portfolio_type">
+                    <option value="">Select Portfolio</option>
+                    <option value="1">Fresher</option>
+                    <option value="2">Experience</option>
+                    <option value="3">Company</option>
                 </select>
             </div>
         </div>
@@ -368,90 +387,92 @@
     <section>
         <div class="container">
             <h3 class="text-center">Select Your Template</h3>
-            <div class="row">
-                <div class="col-md-12">
+            <div class="steps-template-div">
+                <div class="row">
+                    <div class="col-md-12">
 
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body temp-div">
-                                    <a href="javascript:void(0);" class="utype-temp">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body temp-div">
+                                        <!--<a href="javascript:void(0);" class="utype-temp">-->
                                         <img src="image/p1.png" height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                        <!--</a>-->
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body temp-div">
-                                    <a href="javascript:void(0);" class="utype-temp">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body temp-div">
+                                        <!--<a href="javascript:void(0);" class="utype-temp">-->
                                         <img src="image/p1.png" height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="view/template/t1/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                        <!--</a>-->
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="view/template/t1/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body temp-div">
-                                    <a href="javascript:void(0);" class="utype-temp">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body temp-div">
+                                        <!--<a href="javascript:void(0);" class="utype-temp">-->
                                         <img src="image/p1.png" height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                        <!--</a>-->
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body temp-div">
-                                    <a href="javascript:void(0);" class="utype-temp">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body temp-div">
+                                        <!--<a href="javascript:void(0);" class="utype-temp">-->
                                         <img src="image/p1.png" height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                        <!--</a>-->
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body temp-div">
-                                    <a href="javascript:void(0);" class="utype-temp">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body temp-div">
+                                        <!--<a href="javascript:void(0);" class="utype-temp">-->
                                         <img src="image/p1.png" height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                        <!--</a>-->
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="view/template/t2/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card">
-                                <div class="card-header">Free</div>
-                                <div class="card-body temp-div">
-                                    <a href="javascript:void(0);" class="utype-temp">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <div class="card-header">Free</div>
+                                    <div class="card-body temp-div">
+                                        <!--<a href="javascript:void(0);" class="utype-temp">-->
                                         <img src="image/p1.png" height="100%" width="100%">
-                                    </a>
-                                </div>
-                                <div class="card-footer text-center">
-                                    <a href="view/template/t1/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                        <!--</a>-->
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <a href="view/template/t1/index.html" class="btn btn-success ifmodemy">Demo</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -461,10 +482,89 @@
     <section>
 
         <h3 class="text-center">Basic information</h3>
-        <input type="text" placeholder="Street, nbr"/>
-        <input type="text" placeholder="City"/>
-        <input type="text" placeholder="Postcode"/>
-        <input type="text" placeholder="Country"/>
+        <div class="steps-form-div">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input type="text" class="form-control" name="name" id="name"
+                               placeholder="Enter First Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Last Name</label>
+                        <input type="text" class="form-control" name="name" id="name" a
+                               placeholder="Enter Last Name">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" name="phone" id="phone"
+                               placeholder="Enter Phone Number">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email" id="email"
+                               placeholder="Enter Email">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <!--Date of Birth add This postion-->
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="country" class="control-label">Select country<span class="required"
+                                                                                                     aria-required="true">*</span></label>
+                        <select class="form-control" name="country" id="country">
+                            <option value="">Select country</option>
+                            <option value="1">India</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="country" class="control-label">Select state<span class="required"
+                                                                                       aria-required="true">*</span></label>
+                        <select class="form-control" name="state" id="state">
+                            <option value="">Select state</option>
+                            <option value="1">Uttar Pradesh</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="city" class="control-label">Select city<span class="required"
+                                                                                       aria-required="true">*</span></label>
+                        <select class="form-control" name="city" id="city">
+                            <option value="">Select city</option>
+                            <option value="1">Kanpur</option>
+                            <option value="2">Lucknow</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="postal_code">Postal Code</label>
+                        <input type="text" class="form-control" name="postal_code" id="postal_code"
+                               placeholder="Enter Postal Code">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" class="form-control" name="address" id="address"
+                               placeholder="Enter Address">
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
     <h2>Step-</h2>
     <section>
