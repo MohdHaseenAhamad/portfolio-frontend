@@ -516,6 +516,16 @@
             float: left;
             width: 49% !important;
         }
+
+        .wizard .steps a:after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 30px;
+            left: 10px;
+            top: 10px;
+            background: #38475c;
+        }
     </style>
 </head>
 
@@ -525,7 +535,6 @@
 <div class="wizard" id="wizard">
     <h2></h2>
     <section>
-
         <div class="steps-form-div">
             <h3 class="text-center">Select Portfolio Type</h3>
             <div class="form-group label-floating">
@@ -539,8 +548,6 @@
                 </select>
             </div>
         </div>
-
-
     </section>
     <h2></h2>
     <section>
@@ -683,13 +690,24 @@
                                placeholder="Enter Email">
                     </div>
                 </div>
-                <!--<div class="col-md-6">-->
-                <!--<label for="dob">Date of Birth<span class="required"-->
-                <!--aria-required="true">*</span></label>-->
-                <!--<input type="dob" class="form-control" name="dob" id="dob"-->
-                <!--&gt;-->
-                <!--<span class="material-input"></span>-->
-                <!--</div>-->
+                <div class="col-md-6">
+                    <label for="dob">Date of Birth<span class="required"
+                                                        aria-required="true">*</span></label>
+                    <input type="date" class="form-control" name="dob" id="dob"
+                    >
+                    <span class="material-input"></span>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="gender" class="control-label">Gender<span class="required"
+                                                                              aria-required="true">*</span></label>
+                        <select class="form-control select-chosen" name="gender" id="gender">
+                            <option value="">Select gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                </div>
                 <!--<div class="col-md-6">-->
 
                 <!--</div>-->
@@ -748,8 +766,6 @@
     </section>
     <h2></h2>
     <section>
-
-
 
 
         <div class="steps-form-div">
@@ -817,14 +833,25 @@
 
                     </div>
                 </div>
-                <div class="col-md-8 col-sm-12 col-xs-12 no-padding">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                        <!--Start Date add-->
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 add-to">
-                        <!--end date add-->
-                    </div>
+                <!--<div class="col-md-8 col-sm-12 col-xs-12 no-padding">-->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                    <label for="start_date">Start Date<span class="required"
+                                                            aria-required="true">*</span></label>
+                    <input type="date" class="form-control" name="start_date" id="start_date"
+                    >
+                    <span class="material-input"></span>
+
                 </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+
+                    <label for="end_date">End Date<span class="required"
+                                                        aria-required="true">*</span></label>
+                    <input type="date" class="form-control" name="end_date" id="end_date">
+                    <span class="material-input"></span>
+
+                </div>
+                <!--</div>-->
                 <!--<div class="col-md-4 col-sm-12 col-xs-12">-->
                 <!--<div class="form-group label-floating">-->
                 <!--<div class="checkbox">-->
@@ -923,20 +950,34 @@
                 </div>
 
 
-                <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
-                    <!--Start data to end date-->
+                <div class="col-md-5 col-sm-6 col-xs-12">
+
+                    <label for="start_date_exp">Start Date<span class="required"
+                                                            aria-required="true">*</span></label>
+                    <input type="date" class="form-control" name="start_date_exp" id="start_date_exp"
+                    >
+                    <span class="material-input"></span>
+
                 </div>
-                <!--<div class="col-md-4 col-sm-12 col-xs-12 current-works">-->
-                <!--<div class="form-group label-floating">-->
-                <!--<div class="checkbox">-->
-                <!--<label>-->
-                <!--<input type="checkbox" name="is_working" id="is-working-0" class="is-working"><span-->
-                <!--class="checkbox-material"><span class="check"></span></span>-->
-                <!--<small>Currently Working</small>-->
-                <!--</label>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
+                <div class="col-md-5 col-sm-6 col-xs-12">
+
+                    <label for="end_date_exp">End Date<span class="required"
+                                                        aria-required="true">*</span></label>
+                    <input type="date" class="form-control" name="end_date_exp" id="end_date_exp">
+                    <span class="material-input"></span>
+
+                </div>
+                <div class="col-md-2 col-sm-12 col-xs-12 current-works">
+                <div class="form-group label-floating">
+                <div class="checkbox">
+                <label class="">
+                <input type="checkbox" name="is_working" id="is-working-0" class="is-working"><span
+                class="checkbox-material"><span class="check"></span></span>
+                <small>Currently Working</small>
+                </label>
+                </div>
+                </div>
+                </div>
                 <!--<div class="col-md-12 col-sm-12 col-xs-12 ctc-field no-padding">-->
 
                 <!--<div class="col-md-9 col-sm-12 col-xs-12 ctc-allfield">-->
@@ -1050,7 +1091,7 @@
                 <div class="col-md-6 col-sm-6 col-xs-12">
                     <div class="form-group">
                         <label for="country" class="control-label">Level<span class="required"
-                                                                                       aria-required="true">*</span></label>
+                                                                              aria-required="true">*</span></label>
                         <select class="form-control select-chosen" name="level" id="level">
                             <option value="">Select Level</option>
                             <option value="1">1</option>
@@ -1085,7 +1126,6 @@
                 <!--<div class="col-md-6 col-sm-12 col-xs-12">-->
                 <!--Add ACHIEVEMENTS AND AWARDS-->
                 <!--</div>-->
-
 
 
             </div>
