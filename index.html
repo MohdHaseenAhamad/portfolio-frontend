@@ -526,6 +526,67 @@
             top: 10px;
             background: #38475c;
         }
+        .wizard .checkbox {
+            float: left;
+            width: 100%;
+        }
+        .checkbox, .radio {
+            position: relative;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .checkbox label {
+            font-size: 14px;
+            line-height: 1.42857;
+            color: #494949;
+            font-weight: 400;
+        }
+        .checkbox .checkbox-material {
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+            padding-right: 5px;
+            display: inline-block;
+        }
+        .checkbox .checkbox-material:before {
+            display: block;
+            position: absolute;
+            left: 0;
+            content: "";
+            background-color: rgba(0, 0, 0, 0.84);
+            height: 20px;
+            width: 20px;
+            border-radius: 100%;
+            z-index: 1;
+            opacity: 0;
+            margin: 0;
+            top: 0;
+            -webkit-transform: scale3d(2.3, 2.3, 1);
+            transform: scale3d(2.3, 2.3, 1);
+        }
+        .checkbox .checkbox-material .check {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid rgba(0,0,0, .54);
+            overflow: hidden;
+            z-index: 1;
+            border-radius: 3px;
+        }
+        small {
+            font-size: 80%;
+        }
+        .checkbox label {
+            float: left;
+            line-height: 1.65em;
+        }
+        .checkbox label {
+            cursor: pointer;
+            padding-left: 0;
+            color: rgba(0,0,0, 0.26);
+        }
     </style>
 </head>
 
@@ -950,7 +1011,7 @@
                 </div>
 
 
-                <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="col-md-4 col-sm-6 col-xs-12">
 
                     <label for="start_date_exp">Start Date<span class="required"
                                                             aria-required="true">*</span></label>
@@ -959,7 +1020,7 @@
                     <span class="material-input"></span>
 
                 </div>
-                <div class="col-md-5 col-sm-6 col-xs-12">
+                <div class="col-md-4 col-sm-6 col-xs-12">
 
                     <label for="end_date_exp">End Date<span class="required"
                                                         aria-required="true">*</span></label>
@@ -967,14 +1028,14 @@
                     <span class="material-input"></span>
 
                 </div>
-                <div class="col-md-2 col-sm-12 col-xs-12 current-works">
+                <div class="col-md-4 col-sm-12 col-xs-12 ">
                 <div class="form-group label-floating">
                 <div class="checkbox">
-                <label class="">
-                <input type="checkbox" name="is_working" id="is-working-0" class="is-working"><span
+                <label for="is_working">
+                <input type="checkbox" name="is_working" id="is_working" class="is-working"><span
                 class="checkbox-material"><span class="check"></span></span>
-                <small>Currently Working</small>
-                </label>
+                    <small>Currently Working</small></label>
+
                 </div>
                 </div>
                 </div>
@@ -1150,7 +1211,7 @@
 
 <script>
     jQuery(function () {
-
+        $(".check").hide();
         jQuery("#wizard").steps({
             headerTag: "h2",
             bodyTag: "section",
