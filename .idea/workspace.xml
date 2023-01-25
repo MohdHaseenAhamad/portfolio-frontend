@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f559332a-6c02-45c2-b302-6e878a5ea03f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/bootstrap-datepicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/careers.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/chosen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/material-kit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/portfolio-kit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style-v3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style-version3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/v2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image/chosen-sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/chosen/chosen.jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/datepicker/bootstrap-datepicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/datepicker/datepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/material-kit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/portfolio-kit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -16,34 +30,65 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="503" column="86" selection-start-line="503" selection-start-column="86" selection-end-line="503" selection-end-column="86" />
+            <state relative-caret-position="444">
+              <caret line="1054" column="56" lean-forward="true" selection-start-line="1054" selection-start-column="56" selection-end-line="1054" selection-end-column="56" />
               <folding>
                 <element signature="n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#7;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jquery.fancybox.css">
+        <entry file="file://$PROJECT_DIR$/css/chosen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2275">
-              <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
+            <state relative-caret-position="3050">
+              <caret line="125" column="17" lean-forward="true" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/image/blank.gif">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/css/material-kit.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5925">
+              <caret line="6555" column="1" lean-forward="true" selection-start-line="6555" selection-start-column="1" selection-end-line="6555" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/jquery.fancybox-button.css">
+        <entry file="file://$PROJECT_DIR$/js/material-kit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+            <state relative-caret-position="25">
+              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/portfolio-kit.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style-v3.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721150">
+              <caret line="28846" column="30" selection-start-line="28846" selection-start-column="30" selection-end-line="28846" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/chosen/chosen.jquery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="13825">
+              <caret line="563" column="8" selection-start-line="563" selection-start-column="8" selection-end-line="563" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -51,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/fancybox/jquery.fancybox.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
+            <state relative-caret-position="825">
+              <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -61,10 +106,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/jquery.steps-1.1.0/jquery.steps.js">
+        <entry file="file://$PROJECT_DIR$/css/style-version3.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42675">
-              <caret line="1711" column="17" selection-start-line="1711" selection-start-column="4" selection-end-line="1711" selection-end-column="17" />
+            <state relative-caret-position="414425">
+              <caret line="16577" selection-start-line="16577" selection-end-line="16577" />
             </state>
           </provider>
         </entry>
@@ -103,6 +148,12 @@
       <find>section</find>
       <find>steps-form-div</find>
       <find>name</find>
+      <find>dob</find>
+      <find>date-dropdowns</find>
+      <find>month-dropdowns</find>
+      <find>chosen-sprite.png</find>
+      <find>select-chosen</find>
+      <find>chosen</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,6 +166,18 @@
         <option value="$PROJECT_DIR$/fancybox/jquery.fancybox.js" />
         <option value="$PROJECT_DIR$/css/jquery.fancybox-button.css" />
         <option value="$PROJECT_DIR$/css/jquery.fancybox.css" />
+        <option value="$PROJECT_DIR$/js/datepicker/datepicker.min.js" />
+        <option value="$PROJECT_DIR$/js/chosen/chosen.jquery.js" />
+        <option value="$PROJECT_DIR$/css/bootstarp-datepicker.css" />
+        <option value="$PROJECT_DIR$/css/chosen.css" />
+        <option value="$PROJECT_DIR$/css/portfolio-kit.css" />
+        <option value="$PROJECT_DIR$/css/style-v3.css" />
+        <option value="$PROJECT_DIR$/css/v2.css" />
+        <option value="$PROJECT_DIR$/css/style-version3.css" />
+        <option value="$PROJECT_DIR$/css/careers.css" />
+        <option value="$PROJECT_DIR$/js/portfolio-kit.js" />
+        <option value="$PROJECT_DIR$/js/material-kit.js" />
+        <option value="$PROJECT_DIR$/css/material-kit.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -131,6 +194,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,7 +221,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -171,12 +234,14 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\js\datepicker" />
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\css" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\laravel Projects\templates\dynamic-portfolio" />
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\js" />
-      <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
     </key>
   </component>
@@ -206,18 +271,20 @@
       <workItem from="1674192668582" duration="14621000" />
       <workItem from="1674300505053" duration="5180000" />
       <workItem from="1674450950072" duration="1334000" />
-      <workItem from="1674558743973" duration="5761000" />
+      <workItem from="1674558743973" duration="6355000" />
+      <workItem from="1674630070106" duration="5500000" />
+      <workItem from="1674638558744" duration="7438000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40662000" />
+    <option name="totallyTimeSpent" value="54194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info active="true" content_ui="combo" x="710" y="58" width="499" height="923" id="Project" order="0" visible="true" weight="0.19402985" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -243,6 +310,13 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/fancybox/fancybox.min.js" />
+    <entry file="file://$PROJECT_DIR$/../../wfh-kataria-ecotech/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.fancybox.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2275">
@@ -260,16 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/fancybox/jquery.fancybox.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jquery.steps-1.1.0/jquery.steps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42675">
@@ -277,19 +341,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../wfh-kataria-ecotech/.env">
+    <entry file="file://$PROJECT_DIR$/css/bootstarp-datepicker.css" />
+    <entry file="file://$PROJECT_DIR$/js/datepicker/datepicker.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="257">
+          <caret line="749" column="34" selection-start-line="749" selection-start-column="26" selection-end-line="749" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/careers.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22600">
+          <caret line="904" column="42" selection-start-line="904" selection-start-column="42" selection-end-line="904" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/v2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15950">
+          <caret line="638" selection-start-line="638" selection-end-line="638" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/datepicker/bootstrap-datepicker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-datepicker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-v3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721150">
+          <caret line="28846" column="30" selection-start-line="28846" selection-start-column="30" selection-end-line="28846" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/chosen/chosen.jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13825">
+          <caret line="563" column="8" selection-start-line="563" selection-start-column="8" selection-end-line="563" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/fancybox/jquery.fancybox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-version3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414425">
+          <caret line="16577" selection-start-line="16577" selection-end-line="16577" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/portfolio-kit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="113" column="20" lean-forward="true" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/portfolio-kit.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/material-kit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/material-kit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5925">
+          <caret line="6555" column="1" lean-forward="true" selection-start-line="6555" selection-start-column="1" selection-end-line="6555" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/chosen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3050">
+          <caret line="125" column="17" lean-forward="true" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/common.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="503" column="86" selection-start-line="503" selection-start-column="86" selection-end-line="503" selection-end-column="86" />
+        <state relative-caret-position="444">
+          <caret line="1054" column="56" lean-forward="true" selection-start-line="1054" selection-start-column="56" selection-end-line="1054" selection-end-column="56" />
           <folding>
             <element signature="n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

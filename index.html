@@ -12,7 +12,16 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <link href="css/jquery.fancybox.css" rel="stylesheet" async>
+    <!--<link href="css/chosen.css" rel="stylesheet" async>-->
+    <!--<link href="css/portfolio-kit.css" rel="stylesheet">-->
+    <!--<link href="css/style-v3.css" rel="stylesheet">-->
+    <!--<link href="css/style-version3.css" rel="stylesheet">-->
+    <!--<link href="css/careers.css" rel="stylesheet">-->
+    <!--<link href="css/material-kit.css" rel="stylesheet">-->
+
+    <!--<link href="css/v2.css" rel="stylesheet">-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap');
 
@@ -358,11 +367,154 @@
             display: flex;
             margin-bottom: 0.5rem;
         }
+
         .required {
             font-size: 18px;
             line-height: 1em;
             color: #f00 !important;
             font-family: 'Open sans';
+        }
+
+        .date-dropdowns select {
+            font-size: 14px;
+            padding-bottom: 3px;
+            margin-right: 3%;
+            appearance: auto;
+            background-color: transparent;
+        }
+
+        .date-dropdowns {
+            font-family: 'Open sans' !important;
+            margin-top: 0;
+        }
+
+        .date-dropdowns .chosen-container:nth-of-type(2) {
+            min-width: 110px !important;
+            width: 38% !important;
+            margin-right: 2%;
+        }
+
+        element.style {
+            width: 161px;
+        }
+
+        .date-dropdowns .chosen-container:nth-of-type(2) {
+            min-width: 110px !important;
+            width: 38% !important;
+            margin-right: 2%;
+        }
+
+        .chosen-container {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 13px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            width: 100% !important;
+            margin-top: 0;
+            font-family: 'Open Sans';
+        }
+
+        .date-dropdowns select:nth-of-type(1) {
+            min-width: 55px !important;
+            width: 26% !important;
+        }
+
+        .date-dropdowns .chosen-container:nth-of-type(1) {
+            min-width: 85px !important;
+            width: 28% !important;
+            margin-right: 2%;
+        }
+
+        .date-dropdowns select {
+            font-size: 14px;
+            padding-bottom: 3px;
+            margin-right: 3%;
+            appearance: auto;
+            background-color: transparent;
+        }
+
+        .date-dropdowns .chosen-container:nth-of-type(2) {
+            min-width: 110px !important;
+            width: 38% !important;
+            margin-right: 2%;
+        }
+
+        .date-dropdowns select:nth-of-type(3) {
+            min-width: 48px !important;
+            width: 26% !important;
+            margin-right: 0;
+        }
+
+        .date-dropdowns .chosen-container:nth-of-type(3) {
+            min-width: 65px !important;
+            width: 30% !important;
+        }
+
+        .date-dropdowns select {
+            font-size: 14px;
+            padding-bottom: 3px;
+            margin-right: 3%;
+            appearance: auto;
+            background-color: transparent;
+        }
+
+        .date-dropdowns select:nth-of-type(1) {
+            min-width: 55px !important;
+            width: 26% !important;
+        }
+
+        .date-dropdowns select:nth-of-type(2) {
+            min-width: 95px !important;
+            width: 42% !important;
+        }
+
+        .date-dropdowns select:nth-of-type(3) {
+            min-width: 48px !important;
+            width: 26% !important;
+            margin-right: 0;
+        }
+
+        .date-dropdowns select {
+            font-size: 14px;
+            padding-bottom: 3px;
+            margin-right: 3%;
+            appearance: auto;
+            background-color: transparent;
+        }
+
+        .date-dropdowns select:nth-of-type(1) {
+            min-width: 55px !important;
+            width: 26% !important;
+        }
+
+        .date-dropdowns select:nth-of-type(2) {
+            min-width: 95px !important;
+            width: 42% !important;
+        }
+
+        .date-dropdowns select:nth-of-type(3) {
+            min-width: 48px !important;
+            width: 26% !important;
+            margin-right: 0;
+        }
+
+        .month-dropdowns select {
+            font-size: 16px;
+            padding-bottom: 7px;
+            margin: 17px 0 0 0 !important;
+            -webkit-appearance: auto;
+            -moz-appearance: none;
+        }
+
+        /*.form-group {*/
+        /*position: relative;*/
+        /*}*/
+        .month-dropdowns .chosen-container, .month-dropdowns select {
+            float: left;
+            width: 49% !important;
         }
     </style>
 </head>
@@ -375,10 +527,10 @@
     <section>
         <h3 class="text-center">Select Portfolio Type</h3>
         <div class="steps-form-div">
-            <div class="form-group">
+            <div class="form-group label-floating">
                 <label for="portfolio_type" class="control-label">Select Portfolio Type<span class="required"
                                                                                              aria-required="true">*</span></label>
-                <select class="form-control" name="portfolio_type" id="portfolio_type">
+                <select class="form-control select-chosen " name="portfolio_type" id="portfolio_type">
                     <option value="">Select Portfolio</option>
                     <option value="1">Fresher</option>
                     <option value="2">Experience</option>
@@ -491,19 +643,26 @@
         <div class="steps-form-div">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="name">First Name<span class="required"
-                                                          aria-required="true">*</span></label>
-                        <input type="text" class="form-control" name="name" id="name"
+                    <div class="form-group label-floating  is-empty">
+                        <label class="label-floating" for="fname">First Name<span class="required"
+                                                                                  aria-required="true">*</span></label>
+                        <input type="text" class="form-control" name="fname" id="fname"
                                placeholder="Enter First Name">
                     </div>
+
                 </div>
                 <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="name">Last Name<span class="required"
-                                                         aria-required="true">*</span></label>
-                        <input type="text" class="form-control" name="name" id="name" a
-                               placeholder="Enter Last Name">
+                    <!--<div class="form-group label-floating  is-empty">-->
+                    <!--<label class="label-floating" for="lname">Last Name<span class="required"-->
+                    <!--aria-required="true">*</span></label>-->
+                    <!--<input type="text" class="form-control" name="lname" id="lname"-->
+                    <!--placeholder="Enter Last Name">-->
+                    <!--</div>-->
+                    <div class="form-group label-floating is-empty">
+                        <label class="control-label">Last Name</label>
+                        <input type="text" id="last_name" class="form-control"
+                               name="last_name" value=""
+                               autocomplete="off">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -522,14 +681,21 @@
                                placeholder="Enter Email">
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <!--Date of Birth add This postion-->
-                </div>
+                <!--<div class="col-md-6">-->
+                <!--<label for="dob">Date of Birth<span class="required"-->
+                <!--aria-required="true">*</span></label>-->
+                <!--<input type="dob" class="form-control" name="dob" id="dob"-->
+                <!--&gt;-->
+                <!--<span class="material-input"></span>-->
+                <!--</div>-->
+                <!--<div class="col-md-6">-->
+
+                <!--</div>-->
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="country" class="control-label">Select country<span class="required"
-                                                                                                     aria-required="true">*</span></label>
-                        <select class="form-control" name="country" id="country">
+                                                                                       aria-required="true">*</span></label>
+                        <select class="form-control select-chosen" name="country" id="country">
                             <option value="">Select country</option>
                             <option value="1">India</option>
 
@@ -539,8 +705,8 @@
                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="country" class="control-label">Select state<span class="required"
-                                                                                       aria-required="true">*</span></label>
-                        <select class="form-control" name="state" id="state">
+                                                                                     aria-required="true">*</span></label>
+                        <select class="form-control select-chosen" name="state" id="state">
                             <option value="">Select state</option>
                             <option value="1">Uttar Pradesh</option>
 
@@ -548,10 +714,10 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="form-group">
+                    <div class="form-group ">
                         <label for="city" class="control-label">Select city<span class="required"
-                                                                                       aria-required="true">*</span></label>
-                        <select class="form-control" name="city" id="city">
+                                                                                 aria-required="true">*</span></label>
+                        <select class="form-control select-chosen" name="city" id="city">
                             <option value="">Select city</option>
                             <option value="1">Kanpur</option>
                             <option value="2">Lucknow</option>
@@ -582,39 +748,364 @@
     <section>
 
         <h3>Education information</h3>
-        <input type="text" placeholder="Email address"/>
-        <input type="text" placeholder="Phone"/>
-        <input type="text" placeholder="Mobile"/>
+
+
+        <div class="steps-form-div">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating  is-empty">
+                        <label class="control-label">Institution <span class="required">*</span></label>
+                        <input type="text" id="institution_0" class="form-control" data-rule-required="true"
+                               name="institution" data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
+                        <span class="material-input"></span></div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating  is-empty">
+                        <label class="control-label">Degree <span class="required">*</span></label>
+                        <input type="text" id="degree_name" name="degree_name" class="form-control"
+                               data-rule-required="true" data-rule-minlength="2" data-rule-maxlength="100"
+                               autocomplete="off">
+                        <span class="material-input"></span></div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating  is-empty">
+                        <label class="control-label"> Specialisation</label>
+                        <input type="text" id="specialisation_0" class="form-control" name="specialisation"
+                               data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
+                        <span class="material-input"></span></div>
+                </div>
+
+                <!--<div class="col-md-12 col-sm-12 col-xs-12 no-padding">-->
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating ">
+                        <label class="control-label">Select Country <span class="required">*</span></label>
+                        <select id="country-edu-0" class="form-control "
+                                name="Education[0][country]" data-placeholder="Choose a country..."
+                                data-rule-required="true" style="">
+                            <option value="">Select Country</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="2">Albania</option>
+
+
+                            <option value="260">Sint Maarten (Dutch part)</option>
+                            <option value="261">South Sudan</option>
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Select State / County<span class="required">*</span></label>
+                        <select id="state-edu-0" class="form-control" name="ms_state_name"
+                                style="">
+                            <option value="">Select State</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Select City / District<span class="required">*</span></label>
+                        <select id="city-edu-0" class="form-control" name="ms_city_name"
+                                style=";" disabled="disabled">
+                            <option value="">Select City</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12 no-padding">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <!--Start Date add-->
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 add-to">
+                        <!--end date add-->
+                    </div>
+                </div>
+                <!--<div class="col-md-4 col-sm-12 col-xs-12">-->
+                <!--<div class="form-group label-floating">-->
+                <!--<div class="checkbox">-->
+                <!--<label>-->
+                <!--<input type="checkbox" name="pursuing-0" id="pursuing-0" class="pursuing"><span-->
+                <!--class="checkbox-material"><span class="check"></span></span>-->
+                <!--<small>Currently Pursuing</small>-->
+                <!--</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <div class="col-md-12 col-sm-12 col-xs-12 ctc-field no-padding">
+                    <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
+                    <div class="form-group label-floating register-field is-empty">
+                        <label class="control-label textarea-label">Description... </label>
+                        <textarea rows="2" id="education-description-0" class="form-control"
+                                  name="experience_description" maxlength="200"></textarea><span
+                            class="textarea-counter">200 / 200</span>
+                        <span class="material-input"></span></div>
+                </div>
+
+                <!--</div>-->
+                <div class="col-md-12 col-sm-12 col-xs-12"></div>
+                <!--</div>-->
+            </div>
+        </div>
+
     </section>
     <h2>Step-</h2>
     <section>
 
         <h3 class="text-center">Experience information</h3>
-        <input type="text" placeholder="Preferred entrance date"/>
-        <input type="text" placeholder="Number of people"/>
+        <div class="steps-form-div">
+            <div class="row">
+
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating is-empty">
+                        <label class="control-label">Occupation / Title <span class="required">*</span></label>
+                        <input type="text" id="occupation-0" class="form-control" data-rule-required="true" value=""
+                               name="occupation" autocomplete="off" data-rule-minlength="2"
+                               data-rule-maxlength="100">
+                        <span class="material-input"></span></div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating ">
+                        <label class="control-label">Company / Business Name <span class="required">*</span></label>
+                        <input type="text" id="business-name-0" class="form-control" data-rule-required="true"
+                               value=" " name="business" autocomplete="off" data-rule-minlength="2"
+                               data-rule-maxlength="100">
+                        <span class="material-input"></span></div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Select Country <span class="required">*</span></label>
+                        <select id="country-exp-0" class="form-control" name="country"
+                                data-placeholder="Choose a country..." data-rule-required="true"
+                        >
+                            <option value="">Select Country</option>
+                            <option value="1">Afghanistan</option>
+                            <option value="2">Albania</option>
+                            <option value="3">Algeria</option>
+
+                        </select>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Select State / County<span
+                                class="required">*</span></label>
+                        <select id="state-exp-0" class="form-control" name="state"
+                        >
+                            <option value="">Select State</option>
+                        </select>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Select City / District<span
+                                class="required">*</span></label>
+                        <select id="city-exp-0" class="form-control" name="city"
+                        >
+                            <option value="">Select City</option>
+                        </select>
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <!--Start data to end date-->
+                </div>
+                <!--<div class="col-md-4 col-sm-12 col-xs-12 current-works">-->
+                <!--<div class="form-group label-floating">-->
+                <!--<div class="checkbox">-->
+                <!--<label>-->
+                <!--<input type="checkbox" name="is_working" id="is-working-0" class="is-working"><span-->
+                <!--class="checkbox-material"><span class="check"></span></span>-->
+                <!--<small>Currently Working</small>-->
+                <!--</label>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-12 col-sm-12 col-xs-12 ctc-field no-padding">-->
+
+                <!--<div class="col-md-9 col-sm-12 col-xs-12 ctc-allfield">-->
+                <!--<div class="row">-->
+                <div class="col-md-4 col-sm-12 col-xs-12 fee-inputbox">
+                    <div class="form-group label-floating">
+                        <label class="control-label">Salary<span
+                                class="required">*</span></label>
+                        <select id="salary" class="form-control" name="salary">
+                            <option value="">Select City</option>
+                        </select>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12 amount-field">
+                    <div class="form-group label-floating is-empty">
+                        <label class="control-label">Net Salary Per Annum <span
+                                class="required">*</span></label>
+                        <input type="number" id="net-amount-exp-0" class="form-control"
+                               name="Experience[0][net_salary]" data-rule-required="true"
+                               autocomplete="off">
+                        <span class="material-input"></span></div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 amount-field">
+                    <div class="form-group label-floating is-empty">
+                        <label class="control-label">Gross Salary Per Annum
+                            <span class="required">*</span></label>
+                        <input type="number" id="gross-amount-exp-0" class="form-control"
+                               name="Experience[0][gross_salary]" data-rule-required="true"
+                               autocomplete="off">
+                        <span class="material-input"></span></div>
+                </div>
+                <!--</div>-->
+                <!--</div>-->
+
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating register-field is-empty">
+                        <label class="control-label textarea-label">Description... </label>
+                        <textarea rows="2" name="experience_description" id="experience-description-0"
+                                  class="form-control" value="" maxlength="200"></textarea><span
+                            class="textarea-counter">200 / 200</span>
+                        <span class="material-input"></span></div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
     </section>
     <h2>Step-</h2>
     <section>
-        <h3 class="text-center">Add Your Skills</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit
-            anim id est laborum.</p>
+        <h3 class="text-center">ACHIEVEMENTS AND AWARDS</h3>
+        <div class="steps-form-div">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group label-floating  is-empty">
+                        <label class="control-label">Title <span class="required">*</span></label>
+                        <input type="text" id="ach_title" class="form-control" data-rule-required="true"
+                               name="ach_title"
+                               data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
+                        <span class="material-input"></span></div>
+                </div>
+                <!--<div class="col-md-6 col-sm-12 col-xs-12">-->
+                <!--Add ACHIEVEMENTS AND AWARDS-->
+                <!--</div>-->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group label-floating  is-empty">
+                        <label class="control-label">Institution / Organisation</label>
+                        <input type="text" id="organisation" class="form-control" name="organisation"
+                               data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
+                        <span class="material-input"></span></div>
+                </div>
+                <!--<div class="col-md-12 col-sm-12 col-xs-12 ctc-field no-padding">-->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating register-field is-empty">
+                        <label class="control-label textarea-label">Description... </label>
+                        <textarea rows="2" id="ach-description" class="form-control" name="ach_description"
+                                  maxlength="200"></textarea><span class="textarea-counter">200 / 200</span>
+                        <span class="material-input"></span></div>
+                </div>
+            </div>
+            <!--</div>-->
+        </div>
+    </section>
+    <h2>Step-</h2>
+    <section>
+
+        <div class="steps-form-div">
+            <h3 class="text-left">Add Your Skills </h3>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group label-floating  is-empty">
+                        <label class="control-label">Skill <span class="required">*</span></label>
+                        <input type="text" id="skill" class="form-control" data-rule-required="true"
+                               name="skill"
+                               data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
+                        <span class="material-input"></span>
+                    </div>
+                </div>
+                <!--<div class="col-md-6 col-sm-12 col-xs-12">-->
+                <!--Add ACHIEVEMENTS AND AWARDS-->
+                <!--</div>-->
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="form-group">
+                        <label for="country" class="control-label">Level<span class="required"
+                                                                                       aria-required="true">*</span></label>
+                        <select class="form-control select-chosen" name="level" id="level">
+                            <option value="">Select Level</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+                    <button class="btn btn-danger">Add More</button>
+                </div>
+
+
+            </div>
+            <h3 class="text-left">Add Your Hobbies</h3>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-group label-floating  is-empty">
+                        <label class="control-label">Hobbies <span class="required">*</span></label>
+                        <input type="text" id="hobbies" class="form-control" data-rule-required="true"
+                               name="hobbies"
+                               data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
+                        <span class="material-input"></span>
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+                    <button class="btn btn-danger">Add More</button>
+                </div>
+                <!--<div class="col-md-6 col-sm-12 col-xs-12">-->
+                <!--Add ACHIEVEMENTS AND AWARDS-->
+                <!--</div>-->
+
+
+
+            </div>
+
+        </div>
     </section>
 </div>
 
 
 </body>
+<!--<script src="js/material-kit.js"></script>-->
 <script src="js/jquery.steps-1.1.0/jquery.steps.js"></script>
 <script src="js/jquery.steps-1.1.0/jquery.steps.min.js"></script>
 <script src="js/fancybox/jquery.fancybox.js"></script>
+<!--<link src="css/bootstrap-datepicker.css"></link>-->
+<!--<link href="css/bootstrap-datepicker.css" rel="stylesheet">-->
+<!--<script src="js/datepicker/datepicker.min.js"></script>-->
+<!--<script src="js/datepicker/bootstrap-datepicker.js"></script>-->
+
+
+<!--<script src="js/chosen/chosen.jquery.js"></script>-->
 
 <script>
     jQuery(function () {
+
         jQuery("#wizard").steps({
             headerTag: "h2",
             bodyTag: "section",
@@ -637,6 +1128,18 @@
         });
         jQuery('.title').hide();
 
+    });
+    jQuery(function () {
+        // jQuery('#dob').dropdownDatepicker(
+        //     {
+        //         daySuffixes: false,
+        //         submitFormat: 'yyyy-mm-dd',
+        //         sortYear: 'desc',
+        //         dropdownPluginInit: 'chosen'
+        //     }
+        // );
+        // $(".date-dropdowns select").chosen();
+        // $('.select-chosen').chosen({no_results_text: 'Oops, nothing found!', "disable_search_threshold": 8, "width": "100%"});
     });
 
     jQuery(document).ready(function () {
@@ -670,6 +1173,22 @@
             });
 
     });
+
+    $(document).ready(function () {
+        _chosen_library_focused();
+    });
+
+    function _chosen_library_focused() {
+        setTimeout(function () {
+            $('.chosen-container,.date-dropdowns,.select-chosen,.select-chosen-1,.select-chosen-other,.select-chosen-profile').on('focusin', function () {
+                $(this).parent().addClass('is-focused');
+            });
+            $('.chosen-container,.date-dropdowns,.select-chosen,.select-chosen-1,.select-chosen-other,.select-chosen-profile').on('focusout', function () {
+                $(this).parent().removeClass('is-focused');
+            });
+        }, 500);
+    }
+
 
 </script>
 
