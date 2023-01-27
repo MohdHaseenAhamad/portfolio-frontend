@@ -32,6 +32,7 @@
     <h2></h2>
     <section data-id="select-utype">
         <div class="steps-form-div">
+            <form name="select_utype" id="select_utype">
             <h3 class="text-center">Select Portfolio Type</h3>
             <div class="form-group label-floating">
                 <label for="portfolio_type" class="control-label">Select Portfolio Type<span class="required"
@@ -43,6 +44,7 @@
                     <option value="3">Company</option>
                 </select>
             </div>
+            </form>
         </div>
     </section>
     <h2></h2>
@@ -145,6 +147,7 @@
 
 
         <div class="steps-form-div">
+            <form id="basic_information">
             <h3 class="text-center">Basic information</h3>
             <div class="row">
                 <div class="col-md-6">
@@ -164,9 +167,10 @@
                     <!--placeholder="Enter Last Name">-->
                     <!--</div>-->
                     <div class="form-group label-floating is-empty">
-                        <label class="control-label">Last Name</label>
-                        <input type="text" id="last_name" class="form-control"
-                               name="last_name" value=""
+                        <label class="control-label">Last Name<span class="required"
+                                                                    aria-required="true">*</span></label>
+                        <input type="text" id="lname" class="form-control"
+                               name="lname" value=""
                                autocomplete="off">
                     </div>
                 </div>
@@ -187,11 +191,13 @@
                     </div>
                 </div>
                 <div class="col-md-6">
+                    <div class="form-group">
                     <label for="dob">Date of Birth<span class="required"
                                                         aria-required="true">*</span></label>
                     <input type="date" class="form-control" name="dob" id="dob"
                     >
                     <span class="material-input"></span>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
@@ -258,6 +264,7 @@
                 </div>
 
             </div>
+            </form>
         </div>
     </section>
     <h2></h2>
@@ -265,6 +272,7 @@
 
 
         <div class="steps-form-div">
+            <form id="education_information">
             <h3>Education information</h3>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
@@ -373,11 +381,12 @@
                 <div class="col-md-12 col-sm-12 col-xs-12"></div>
                 <!--</div>-->
             </div>
+            </form>
         </div>
 
     </section>
     <h2></h2>
-    <section data-id="exp">
+    <section data-id="experience-information">
 
 
         <div class="steps-form-div">
@@ -531,7 +540,7 @@
 
     </section>
     <h2></h2>
-    <section>
+    <section data-id="achievement-and-awards">
 
         <div class="steps-form-div">
             <h3 class="text-center">Achievement AND Awards</h3>
@@ -567,7 +576,7 @@
         </div>
     </section>
     <h2></h2>
-    <section>
+    <section data-id="skills">
 
         <div class="steps-form-div">
             <h3 class="text-left">Add Your Skills </h3>
@@ -636,6 +645,7 @@
 <script src="js/jquery.steps-1.1.0/jquery.steps.js"></script>
 <script src="js/jquery.steps-1.1.0/jquery.steps.min.js"></script>
 <script src="js/fancybox/jquery.fancybox.js"></script>
+<script src="js/jquery.validate.js"></script>
 <!--<link src="css/bootstrap-datepicker.css"></link>-->
 <!--<link href="css/bootstrap-datepicker.css" rel="stylesheet">-->
 <!--<script src="js/datepicker/datepicker.min.js"></script>-->
@@ -645,6 +655,7 @@
 <!--<script src="js/chosen/chosen.jquery.js"></script>-->
 
 <script>
+
     jQuery(function () {
         $(".check").hide();
         jQuery("#wizard").steps({
@@ -661,20 +672,26 @@
                 previous: "Previous"
             },
             onInit: function (event, currentIndex, newIndex) {
-            
+
             },
             onStepChanging: function (event, indexOn, indexTo) {
-                $current_elem = $(this).find('section.current').attr('data-id');
-                // var arg1 = $(this).find('section.current').attr('data-arg1');
-                var func_name = $current_elem.replace("-", "");
-               console.log(func_name);
-               return true;
+                var step = parseInt(indexOn) + 1, rettype = true;
+                if (indexTo > indexOn) {
+                    rettype = eval('validate_and_save_step' + step)();
+                    if (rettype == false) {
+
+                    }
+                } else {
+
+                }
+                return rettype;
             }
 
         });
         jQuery('.title').hide();
 
     });
+
     jQuery(function () {
         // jQuery('#dob').dropdownDatepicker(
         //     {
@@ -735,7 +752,122 @@
         }, 500);
     }
 
+    function validate_and_save_step1()
+    {
+        $('#select_utype').validate({
+            ignore: '',
+            rules: {
+                portfolio_type:{
+                    required:true
+                }
+            },
+            errorElement: "div",
+            errorClass: "help-block-others",
+            onfocusin: false,
+            errorPlacement: function (error, element) {
+                element.parent().after(error);
+            },
+            highlight: function (element) {
 
+                jQuery(element).parent().addClass("has-error");
+
+            },
+            unhighlight: function (element) {
+
+                jQuery(element).parent().removeClass("has-error");
+            },
+            invalidHandler: function (form, validator) {
+                if (!validator.numberOfInvalids()) {
+                    //return false;
+                }
+            },
+            submitHandler: function (form) {
+            }
+        });
+        if($('#select_utype').valid())
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
+    function validate_and_save_step2() {
+        return true;
+    }
+    function validate_and_save_step3()
+    {
+        $('#basic_information').validate({
+            ignore: '',
+            rules: {
+                fname:{
+                    required:true
+                },
+                lname:{
+                    required:true
+                },
+                phone:{
+                    required:true,
+                    digits:true
+                },
+                email:{
+                    required:true,
+                    email:true
+                },
+                dob:{
+                    required:true,
+                },
+                gender:{
+                    required:true,
+                },
+                country:{
+                    required:true,
+                },
+                state:{
+                    required:true,
+                },
+                city:{
+                    required:true,
+                },
+                postal_code:{
+                    required:true,
+                },
+                address:{
+                    required:true,
+                }
+
+            },
+            errorElement: "div",
+            errorClass: "help-block-others",
+            onfocusin: false,
+            errorPlacement: function (error, element) {
+                element.parent().after(error);
+            },
+            highlight: function (element) {
+
+                jQuery(element).parent().addClass("has-error");
+
+            },
+            unhighlight: function (element) {
+
+                jQuery(element).parent().removeClass("has-error");
+            },
+            invalidHandler: function (form, validator) {
+                if (!validator.numberOfInvalids()) {
+                    //return false;
+                }
+            },
+            submitHandler: function (form) {
+            }
+        });
+        if($('#basic_information').valid())
+        {
+            return true;
+        } else
+        {
+            return false;
+        }
+    }
 </script>
 
 </html>

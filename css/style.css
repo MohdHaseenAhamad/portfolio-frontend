@@ -562,3 +562,30 @@ small {
     padding-left: 0;
     color: rgba(0,0,0, 0.26);
 }
+.help-block-others, .required {
+    font-size: 14px;
+    line-height: 1em;
+    color: #f00 !important;
+    font-family: 'Open sans';
+    text-align: left;
+}
+
+element.style {
+}
+.label-floating.has-error .chosen-container-single .chosen-single, .label-floating3.has-error .chosen-container-single .chosen-single {
+    border-color: #f00;
+    box-shadow: 0 0 0 1px #f00 inset;
+    -webkit-box-shadow: 0 0 0 1px #f00 inset;
+    -moz-box-shadow: 0 0 0 1px #f00 inset;
+}
+.has-error .chosen-container-multi .chosen-choices, .has-error select,.has-error input {
+    border-color: #f00;
+    box-shadow: 0 0 0 1px #f00 inset;
+    -webkit-box-shadow: 0 0 0 1px #f00 inset;
+    -moz-box-shadow: 0 0 0 1px #f00 inset;
+}
+.registration-page .register-field, .form-group input {
+    padding-bottom: 7px !important;
+    margin: 10px 0 0 0 !important;
+}
+

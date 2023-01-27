@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f559332a-6c02-45c2-b302-6e878a5ea03f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/js/jquery.validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,11 +18,37 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="1206" column="43" lean-forward="true" selection-start-line="1206" selection-start-column="43" selection-end-line="1206" selection-end-column="43" />
+            <state relative-caret-position="256">
+              <caret line="170" column="97" selection-start-line="170" selection-start-column="97" selection-end-line="170" selection-end-column="97" />
               <folding>
+                <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#section#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#33258#34224#0" />
+                <element signature="e#34250#34701#0" />
+                <element signature="e#34744#35853#0" />
+                <element signature="e#36748#37803#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="625">
+              <caret line="586" column="53" lean-forward="true" selection-start-line="586" selection-start-column="53" selection-end-line="586" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jquery.validate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="316">
+              <caret line="110" column="21" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -28,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/jquery.fancybox.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2275">
+            <state relative-caret-position="825">
               <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
             </state>
           </provider>
@@ -37,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/careers.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22650">
+            <state relative-caret-position="22600">
               <caret line="904" column="42" selection-start-line="904" selection-start-column="42" selection-end-line="904" selection-end-column="42" />
             </state>
           </provider>
@@ -55,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/chosen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13300">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="275">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -83,19 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>currentSection</find>
-      <find>h1</find>
-      <find>disabled</find>
-      <find>float</find>
-      <find>.wizard &gt; .actions &gt; ul</find>
-      <find>number</find>
-      <find>titleTemplate: '#title#',</find>
-      <find>curr</find>
-      <find>.wizard.vertical &gt; .steps</find>
-      <find>link</find>
-      <find>fancybox</find>
-      <find>img</find>
-      <find>#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span</find>
       <find>.fancybox-close {</find>
       <find>ifmode</find>
       <find>feedbackbox</find>
@@ -104,7 +119,6 @@
       <find>section</find>
       <find>steps-form-div</find>
       <find>name</find>
-      <find>dob</find>
       <find>date-dropdowns</find>
       <find>month-dropdowns</find>
       <find>chosen-sprite.png</find>
@@ -113,6 +127,20 @@
       <find>a {</find>
       <find>position</find>
       <find>checkbox-material</find>
+      <find>portfolio_type</find>
+      <find>select_utype</find>
+      <find>selectutype</find>
+      <find>validate_and_save_step1</find>
+      <find>validate_and_save_step</find>
+      <find>label-floating</find>
+      <find>help-block-others</find>
+      <find>basic_information</find>
+      <find>email</find>
+      <find>dob</find>
+      <find>gender</find>
+      <find>country</find>
+      <find>city</find>
+      <find>postal_code</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -137,6 +165,7 @@
         <option value="$PROJECT_DIR$/css/chosen.css" />
         <option value="$PROJECT_DIR$/css/material-kit.css" />
         <option value="$PROJECT_DIR$/css/style-v3.css" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -188,15 +217,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
-      <recent name="E:\laravel Projects\templates\dynamic-portfolio\js\datepicker" />
-      <recent name="E:\laravel Projects\templates\dynamic-portfolio\css" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\laravel Projects\templates\dynamic-portfolio" />
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\js" />
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\js" />
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\js\datepicker" />
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -227,18 +257,19 @@
       <workItem from="1674450950072" duration="1334000" />
       <workItem from="1674558743973" duration="6355000" />
       <workItem from="1674630070106" duration="5500000" />
-      <workItem from="1674638558744" duration="15121000" />
+      <workItem from="1674638558744" duration="15620000" />
+      <workItem from="1674811534869" duration="10151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61877000" />
+    <option name="totallyTimeSpent" value="72527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" x="710" y="58" width="499" height="923" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info active="true" content_ui="combo" x="710" y="58" width="499" height="923" id="Project" order="0" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -330,9 +361,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/js/.editorconfig" />
     <entry file="file://$PROJECT_DIR$/js/portfolio-kit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -354,16 +383,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap-datepicker.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style-version3.css" />
+    <entry file="file://$PROJECT_DIR$/css/portfolio-kit.css" />
+    <entry file="file://$PROJECT_DIR$/css/style-v3.css" />
+    <entry file="file://$PROJECT_DIR$/css/v2.css" />
+    <entry file="file://$PROJECT_DIR$/css/material-kit.css" />
     <entry file="file://$PROJECT_DIR$/css/careers.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22650">
+        <state relative-caret-position="22600">
           <caret line="904" column="42" selection-start-line="904" selection-start-column="42" selection-end-line="904" selection-end-column="42" />
         </state>
       </provider>
@@ -375,57 +402,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-version3.css">
+    <entry file="file://$PROJECT_DIR$/css/chosen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="16566" column="25" lean-forward="true" selection-start-line="16566" selection-start-column="25" selection-end-line="16566" selection-end-column="25" />
+        <state relative-caret-position="275">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/portfolio-kit.css">
+    <entry file="file://$PROJECT_DIR$/css/bootstrap-datepicker.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        <state relative-caret-position="175">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style-v3.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/v2.css">
+    <entry file="file://$PROJECT_DIR$/js/jquery.validate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="638" selection-start-line="638" selection-end-line="638" />
+        <state relative-caret-position="316">
+          <caret line="110" column="21" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/jquery.fancybox.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2275">
+        <state relative-caret-position="825">
           <caret line="91" column="31" selection-start-line="91" selection-start-column="31" selection-end-line="91" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/material-kit.css">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/chosen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13300">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="625">
+          <caret line="586" column="53" lean-forward="true" selection-start-line="586" selection-start-column="53" selection-end-line="586" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="1206" column="43" lean-forward="true" selection-start-line="1206" selection-start-column="43" selection-end-line="1206" selection-end-column="43" />
+        <state relative-caret-position="256">
+          <caret line="170" column="97" selection-start-line="170" selection-start-column="97" selection-end-line="170" selection-end-column="97" />
           <folding>
+            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#4;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#5;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#6;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#33258#34224#0" />
+            <element signature="e#34250#34701#0" />
+            <element signature="e#34744#35853#0" />
+            <element signature="e#36748#37803#0" />
           </folding>
         </state>
       </provider>
