@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link href="css/style.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
     <link href="css/jquery.fancybox.css" rel="stylesheet" async>
     <!--<link href="css/chosen.css" rel="stylesheet" async>-->
     <!--<link href="css/portfolio-kit.css" rel="stylesheet">-->
@@ -33,17 +33,17 @@
     <section data-id="select-utype">
         <div class="steps-form-div">
             <form name="select_utype" id="select_utype">
-            <h3 class="text-center">Select Portfolio Type</h3>
-            <div class="form-group label-floating">
-                <label for="portfolio_type" class="control-label">Select Portfolio Type<span class="required"
-                                                                                             aria-required="true">*</span></label>
-                <select class="form-control select-chosen " name="portfolio_type" id="portfolio_type">
-                    <option value="">Select Portfolio</option>
-                    <option value="1">Fresher</option>
-                    <option value="2">Experience</option>
-                    <option value="3">Company</option>
-                </select>
-            </div>
+                <h3 class="text-center">Select Portfolio Type</h3>
+                <div class="form-group label-floating">
+                    <label for="portfolio_type" class="control-label">Select Portfolio Type<span class="required"
+                                                                                                 aria-required="true">*</span></label>
+                    <select class="form-control select-chosen " name="portfolio_type" id="portfolio_type">
+                        <option value="">Select Portfolio</option>
+                        <option value="1">Fresher</option>
+                        <option value="2">Experience</option>
+                        <option value="3">Company</option>
+                    </select>
+                </div>
             </form>
         </div>
     </section>
@@ -148,122 +148,122 @@
 
         <div class="steps-form-div">
             <form id="basic_information">
-            <h3 class="text-center">Basic information</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form-group label-floating  is-empty">
-                        <label class="label-floating" for="fname">First Name<span class="required"
-                                                                                  aria-required="true">*</span></label>
-                        <input type="text" class="form-control" name="fname" id="fname"
-                               placeholder="Enter First Name">
-                    </div>
+                <h3 class="text-center">Basic information</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group label-floating  is-empty">
+                            <label class="label-floating" for="fname">First Name<span class="required"
+                                                                                      aria-required="true">*</span></label>
+                            <input type="text" class="form-control" name="fname" id="fname"
+                                   placeholder="Enter First Name">
+                        </div>
 
-                </div>
-                <div class="col-md-6">
-                    <!--<div class="form-group label-floating  is-empty">-->
-                    <!--<label class="label-floating" for="lname">Last Name<span class="required"-->
-                    <!--aria-required="true">*</span></label>-->
-                    <!--<input type="text" class="form-control" name="lname" id="lname"-->
-                    <!--placeholder="Enter Last Name">-->
-                    <!--</div>-->
-                    <div class="form-group label-floating is-empty">
-                        <label class="control-label">Last Name<span class="required"
-                                                                    aria-required="true">*</span></label>
-                        <input type="text" id="lname" class="form-control"
-                               name="lname" value=""
-                               autocomplete="off">
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="phone">Phone Number<span class="required"
-                                                             aria-required="true">*</span></label>
-                        <input type="tel" class="form-control" name="phone" id="phone"
-                               placeholder="Enter Phone Number">
+                    <div class="col-md-6">
+                        <!--<div class="form-group label-floating  is-empty">-->
+                        <!--<label class="label-floating" for="lname">Last Name<span class="required"-->
+                        <!--aria-required="true">*</span></label>-->
+                        <!--<input type="text" class="form-control" name="lname" id="lname"-->
+                        <!--placeholder="Enter Last Name">-->
+                        <!--</div>-->
+                        <div class="form-group label-floating is-empty">
+                            <label class="control-label">Last Name<span class="required"
+                                                                        aria-required="true">*</span></label>
+                            <input type="text" id="lname" class="form-control"
+                                   name="lname" value=""
+                                   autocomplete="off">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="email">Email<span class="required"
-                                                      aria-required="true">*</span></label>
-                        <input type="email" class="form-control" name="email" id="email"
-                               placeholder="Enter Email">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="phone">Phone Number<span class="required"
+                                                                 aria-required="true">*</span></label>
+                            <input type="tel" class="form-control" name="phone" id="phone"
+                                   placeholder="Enter Phone Number">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                    <label for="dob">Date of Birth<span class="required"
-                                                        aria-required="true">*</span></label>
-                    <input type="date" class="form-control" name="dob" id="dob"
-                    >
-                    <span class="material-input"></span>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="gender" class="control-label">Gender<span class="required"
-                                                                              aria-required="true">*</span></label>
-                        <select class="form-control select-chosen" name="gender" id="gender">
-                            <option value="">Select gender</option>
-                            <option value="1">Male</option>
-                            <option value="2">Female</option>
-                        </select>
-                    </div>
-                </div>
-                <!--<div class="col-md-6">-->
-
-                <!--</div>-->
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="country" class="control-label">Select country<span class="required"
-                                                                                       aria-required="true">*</span></label>
-                        <select class="form-control select-chosen" name="country" id="country">
-                            <option value="">Select country</option>
-                            <option value="1">India</option>
-
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group">
-                        <label for="country" class="control-label">Select state<span class="required"
-                                                                                     aria-required="true">*</span></label>
-                        <select class="form-control select-chosen" name="state" id="state">
-                            <option value="">Select state</option>
-                            <option value="1">Uttar Pradesh</option>
-
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="form-group ">
-                        <label for="city" class="control-label">Select city<span class="required"
-                                                                                 aria-required="true">*</span></label>
-                        <select class="form-control select-chosen" name="city" id="city">
-                            <option value="">Select city</option>
-                            <option value="1">Kanpur</option>
-                            <option value="2">Lucknow</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="postal_code">Postal Code<span class="required"
-                                                                  aria-required="true">*</span></label>
-                        <input type="text" class="form-control" name="postal_code" id="postal_code"
-                               placeholder="Enter Postal Code">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="address">Address<span class="required"
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="email">Email<span class="required"
                                                           aria-required="true">*</span></label>
-                        <input type="text" class="form-control" name="address" id="address"
-                               placeholder="Enter Address">
+                            <input type="email" class="form-control" name="email" id="email"
+                                   placeholder="Enter Email">
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth<span class="required"
+                                                                aria-required="true">*</span></label>
+                            <input type="date" class="form-control" name="dob" id="dob"
+                            >
+                            <span class="material-input"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="gender" class="control-label">Gender<span class="required"
+                                                                                  aria-required="true">*</span></label>
+                            <select class="form-control select-chosen" name="gender" id="gender">
+                                <option value="">Select gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-6">-->
 
-            </div>
+                    <!--</div>-->
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="country" class="control-label">Select country<span class="required"
+                                                                                           aria-required="true">*</span></label>
+                            <select class="form-control select-chosen" name="country" id="country">
+                                <option value="">Select country</option>
+                                <option value="1">India</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="country" class="control-label">Select state<span class="required"
+                                                                                         aria-required="true">*</span></label>
+                            <select class="form-control select-chosen" name="state" id="state">
+                                <option value="">Select state</option>
+                                <option value="1">Uttar Pradesh</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group ">
+                            <label for="city" class="control-label">Select city<span class="required"
+                                                                                     aria-required="true">*</span></label>
+                            <select class="form-control select-chosen" name="city" id="city">
+                                <option value="">Select city</option>
+                                <option value="1">Kanpur</option>
+                                <option value="2">Lucknow</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="postal_code">Postal Code<span class="required"
+                                                                      aria-required="true">*</span></label>
+                            <input type="text" class="form-control" name="postal_code" id="postal_code"
+                                   placeholder="Enter Postal Code">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="address">Address<span class="required"
+                                                              aria-required="true">*</span></label>
+                            <input type="text" class="form-control" name="address" id="address"
+                                   placeholder="Enter Address">
+                        </div>
+                    </div>
+
+                </div>
             </form>
         </div>
     </section>
@@ -273,116 +273,121 @@
 
         <div class="steps-form-div">
             <form id="education_information">
-            <h3>Education information</h3>
-            <div class="row">
-                <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div class="form-group label-floating  is-empty">
-                        <label class="control-label">Institution <span class="required">*</span></label>
-                        <input type="text" id="institution_0" class="form-control" data-rule-required="true"
-                               name="institution" data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
-                        <span class="material-input"></span></div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="form-group label-floating  is-empty">
-                        <label class="control-label">Degree <span class="required">*</span></label>
-                        <input type="text" id="degree_name" name="degree_name" class="form-control"
-                               data-rule-required="true" data-rule-minlength="2" data-rule-maxlength="100"
-                               autocomplete="off">
-                        <span class="material-input"></span></div>
-                </div>
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="form-group label-floating  is-empty">
-                        <label class="control-label"> Specialisation</label>
-                        <input type="text" id="specialisation_0" class="form-control" name="specialisation"
-                               data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
-                        <span class="material-input"></span></div>
-                </div>
+                <h3>Education information</h3>
+                <div class="row">
+                    <div id="education-div" class="education-div">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="form-group label-floating  is-empty">
+                                <label class="control-label">Institution <span class="required">*</span></label>
+                                <input type="text" id="institution_0" class="form-control" data-rule-required="true"
+                                       name="institution[0]" data-rule-minlength="2" data-rule-maxlength="100"
+                                       autocomplete="off">
+                                <span class="material-input"></span></div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group label-floating  is-empty">
+                                <label class="control-label">Degree <span class="required">*</span></label>
+                                <input type="text" id="degree_name" name="degree_name[0]" class="form-control"
+                                       data-rule-required="true" data-rule-minlength="2" data-rule-maxlength="100"
+                                       autocomplete="off">
+                                <span class="material-input"></span></div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group label-floating  is-empty">
+                                <label class="control-label"> Specialisation</label>
+                                <input type="text" id="specialisation_0" class="form-control" name="specialisation[0]"
+                                       data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
+                                <span class="material-input"></span></div>
+                        </div>
 
-                <!--<div class="col-md-12 col-sm-12 col-xs-12 no-padding">-->
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="form-group label-floating ">
-                        <label class="control-label">Select Country <span class="required">*</span></label>
-                        <select id="country-edu-0" class="form-control "
-                                name="Education[0][country]" data-placeholder="Choose a country..."
-                                data-rule-required="true" style="">
-                            <option value="">Select Country</option>
-                            <option value="1">Afghanistan</option>
-                            <option value="2">Albania</option>
+                        <!--<div class="col-md-12 col-sm-12 col-xs-12 no-padding">-->
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="form-group label-floating ">
+                                <label class="control-label">Select Country <span class="required">*</span></label>
+                                <select id="country-edu-0" class="form-control "
+                                        name="country[0]" data-placeholder="Choose a country..."
+                                        data-rule-required="true" style="">
+                                    <option value="">Select Country</option>
+                                    <option value="1">Afghanistan</option>
+                                    <option value="2">Albania</option>
 
 
-                            <option value="260">Sint Maarten (Dutch part)</option>
-                            <option value="261">South Sudan</option>
-                        </select>
+                                    <option value="260">Sint Maarten (Dutch part)</option>
+                                    <option value="261">South Sudan</option>
+                                </select>
 
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Select State / County<span
+                                        class="required">*</span></label>
+                                <select id="state-edu-0" class="form-control" name="ms_state_name[0]"
+                                        style="">
+                                    <option value="">Select State</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 col-xs-12">
+                            <div class="form-group label-floating">
+                                <label class="control-label">Select City / District<span
+                                        class="required">*</span></label>
+                                <select id="city-edu-0" class="form-control" name="ms_city_name[0]"
+                                        style="" disabled="disabled">
+                                    <option value="">Select City</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <!--<div class="col-md-8 col-sm-12 col-xs-12 no-padding">-->
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <label for="start_date">Start Date<span class="required"
+                                                                    aria-required="true">*</span></label>
+                            <input type="date" class="form-control" name="start_date[0]" id="start_date"
+                            >
+                            <span class="material-input"></span>
+
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+
+                            <label for="end_date">End Date<span class="required"
+                                                                aria-required="true">*</span></label>
+                            <input type="date" class="form-control" name="end_date[0]" id="end_date">
+                            <span class="material-input"></span>
+
+                        </div>
+
+                        <div class="col-md-12 col-sm-12 col-xs-12 ctc-field no-padding">
+                            <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
+                            <div class="form-group label-floating register-field is-empty">
+                                <label class="control-label textarea-label">Description... </label>
+                                <textarea rows="2" id="education-description-0" class="form-control"
+                                          name="experience_description[0]" maxlength="200"></textarea><span
+                                    class="textarea-counter">200 / 200</span>
+                                <span class="material-input"></span></div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-12">
+                            <div class="form-group label-floating btn-box">
+                                <a href="javascript:void(0);"
+                                   class="remove-yt-btn btn btn-sm btn-danger yt_link_clear"
+                                   data-key-url="" title="Remove field">Remove</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12 text-left">
+                        <a href="javascript:void(0);" class="btn btn-success add_education">Add More</a>
                     </div>
                 </div>
 
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="form-group label-floating">
-                        <label class="control-label">Select State / County<span class="required">*</span></label>
-                        <select id="state-edu-0" class="form-control" name="ms_state_name"
-                                style="">
-                            <option value="">Select State</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-12 col-xs-12">
-                    <div class="form-group label-floating">
-                        <label class="control-label">Select City / District<span class="required">*</span></label>
-                        <select id="city-edu-0" class="form-control" name="ms_city_name"
-                                style=";" disabled="disabled">
-                            <option value="">Select City</option>
-                        </select>
-
-                    </div>
-                </div>
-                <!--<div class="col-md-8 col-sm-12 col-xs-12 no-padding">-->
-                <div class="col-md-6 col-sm-6 col-xs-12">
-
-                    <label for="start_date">Start Date<span class="required"
-                                                            aria-required="true">*</span></label>
-                    <input type="date" class="form-control" name="start_date" id="start_date"
-                    >
-                    <span class="material-input"></span>
-
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-
-                    <label for="end_date">End Date<span class="required"
-                                                        aria-required="true">*</span></label>
-                    <input type="date" class="form-control" name="end_date" id="end_date">
-                    <span class="material-input"></span>
-
-                </div>
                 <!--</div>-->
-                <!--<div class="col-md-4 col-sm-12 col-xs-12">-->
-                <!--<div class="form-group label-floating">-->
-                <!--<div class="checkbox">-->
-                <!--<label>-->
-                <!--<input type="checkbox" name="pursuing-0" id="pursuing-0" class="pursuing"><span-->
-                <!--class="checkbox-material"><span class="check"></span></span>-->
-                <!--<small>Currently Pursuing</small>-->
-                <!--</label>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
-                <div class="col-md-12 col-sm-12 col-xs-12 ctc-field no-padding">
-                    <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
-                    <div class="form-group label-floating register-field is-empty">
-                        <label class="control-label textarea-label">Description... </label>
-                        <textarea rows="2" id="education-description-0" class="form-control"
-                                  name="experience_description" maxlength="200"></textarea><span
-                            class="textarea-counter">200 / 200</span>
-                        <span class="material-input"></span></div>
-                </div>
-
-                <!--</div>-->
-                <div class="col-md-12 col-sm-12 col-xs-12"></div>
-                <!--</div>-->
-            </div>
             </form>
+            <!--</div>-->
         </div>
+
 
     </section>
     <h2></h2>
@@ -458,7 +463,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
 
                     <label for="start_date_exp">Start Date<span class="required"
-                                                            aria-required="true">*</span></label>
+                                                                aria-required="true">*</span></label>
                     <input type="date" class="form-control" name="start_date_exp" id="start_date_exp"
                     >
                     <span class="material-input"></span>
@@ -467,21 +472,22 @@
                 <div class="col-md-4 col-sm-6 col-xs-12">
 
                     <label for="end_date_exp">End Date<span class="required"
-                                                        aria-required="true">*</span></label>
+                                                            aria-required="true">*</span></label>
                     <input type="date" class="form-control" name="end_date_exp" id="end_date_exp">
                     <span class="material-input"></span>
 
                 </div>
                 <div class="col-md-4 col-sm-12 col-xs-12 ">
-                <div class="form-group label-floating">
-                <div class="checkbox">
-                <label for="is_working">
-                <input type="checkbox" name="is_working" id="is_working" class="is-working"><span
-                class="checkbox-material"><span class="check"></span></span>
-                    <small>Currently Working</small></label>
+                    <div class="form-group label-floating">
+                        <div class="checkbox">
+                            <label for="is_working">
+                                <input type="checkbox" name="is_working" id="is_working" class="is-working"><span
+                                    class="checkbox-material"><span class="check"></span></span>
+                                <small>Currently Working</small>
+                            </label>
 
-                </div>
-                </div>
+                        </div>
+                    </div>
                 </div>
                 <!--<div class="col-md-12 col-sm-12 col-xs-12 ctc-field no-padding">-->
 
@@ -646,6 +652,7 @@
 <script src="js/jquery.steps-1.1.0/jquery.steps.min.js"></script>
 <script src="js/fancybox/jquery.fancybox.js"></script>
 <script src="js/jquery.validate.js"></script>
+<script src="js/cloneData.js"></script>
 <!--<link src="css/bootstrap-datepicker.css"></link>-->
 <!--<link href="css/bootstrap-datepicker.css" rel="stylesheet">-->
 <!--<script src="js/datepicker/datepicker.min.js"></script>-->
@@ -659,7 +666,7 @@
     jQuery(function () {
         $(".check").hide();
         jQuery("#wizard").steps({
-            startIndex:0,
+            startIndex: 0,
             headerTag: "h2",
             bodyTag: "section",
             stepsOrientation: "vertical",
@@ -752,13 +759,12 @@
         }, 500);
     }
 
-    function validate_and_save_step1()
-    {
+    function validate_and_save_step1() {
         $('#select_utype').validate({
             ignore: '',
             rules: {
-                portfolio_type:{
-                    required:true
+                portfolio_type: {
+                    required: true
                 }
             },
             errorElement: "div",
@@ -784,56 +790,55 @@
             submitHandler: function (form) {
             }
         });
-        if($('#select_utype').valid())
-        {
+        if ($('#select_utype').valid()) {
             return true;
-        } else
-        {
+        } else {
             return false;
         }
     }
+
     function validate_and_save_step2() {
         return true;
     }
-    function validate_and_save_step3()
-    {
+
+    function validate_and_save_step3() {
         $('#basic_information').validate({
             ignore: '',
             rules: {
-                fname:{
-                    required:true
+                fname: {
+                    required: true
                 },
-                lname:{
-                    required:true
+                lname: {
+                    required: true
                 },
-                phone:{
-                    required:true,
-                    digits:true
+                phone: {
+                    required: true,
+                    digits: true
                 },
-                email:{
-                    required:true,
-                    email:true
+                email: {
+                    required: true,
+                    email: true
                 },
-                dob:{
-                    required:true,
+                dob: {
+                    required: true,
                 },
-                gender:{
-                    required:true,
+                gender: {
+                    required: true,
                 },
-                country:{
-                    required:true,
+                country: {
+                    required: true,
                 },
-                state:{
-                    required:true,
+                state: {
+                    required: true,
                 },
-                city:{
-                    required:true,
+                city: {
+                    required: true,
                 },
-                postal_code:{
-                    required:true,
+                postal_code: {
+                    required: true,
                 },
-                address:{
-                    required:true,
+                address: {
+                    required: true,
                 }
 
             },
@@ -860,14 +865,34 @@
             submitHandler: function (form) {
             }
         });
-        if($('#basic_information').valid())
-        {
+        if ($('#basic_information').valid()) {
             return true;
-        } else
-        {
-            return false;
+        } else {
+            return true;
         }
     }
+    $("#education-div").show();
+    $('.add_education').cloneData({
+        mainContainerId: "education-div",
+        cloneContainer: 'education-div',
+        removeButtonClass: 'remove-yt-btn',
+        maxLimit: 5,
+        beforeRender: function () {
+            console.log("beforeRender");
+            $('.remove-yt-btn').show();
+        },
+        afterRender: function () {
+            console.log("afterRender");
+            $('.remove-yt-btn:first').hide();
+            if ($('.clone-div').length == 5) {
+                $('#add_education').hide();
+            }
+            $('.yt_link_clear').click(function () {
+
+                $('#add_education').show();
+            });
+        }
+    });
 </script>
 
 </html>
