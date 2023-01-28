@@ -328,11 +328,10 @@
                                 <!--<div class="col-md-12 col-sm-12 col-xs-12">-->
                                 <div class="form-group label-floating register-field is-empty">
                                     <label class="control-label textarea-label">Description... </label>
-                                    <textarea rows="2" id="description0" class="form-control"
+                                    <textarea rows="2" id="edu_description0" class="form-control"
                                               name="education_institution[0][edu_description]"
-                                              maxlength="200"></textarea><span
-                                        class="textarea-counter">200 / 200</span>
-                                    <span class="material-input"></span></div>
+                                              maxlength="200"></textarea>
+                                    </div>
                             </div>
                             <div class="col-md-12 col-sm-12 col-xs-12 text-right">
                                 <div class="form-group label-floating btn-box">
@@ -510,7 +509,7 @@
                                     <label class="control-label textarea-label">Description... </label>
                                     <textarea rows="2" name="experience_information[0][exp_desc]" id="exp_desc0"
                                               class="form-control" value="" maxlength="200"></textarea>
-                                    <span class="material-input"></span></div>
+                                    </div>
                             </div>
 
                             <div class="col-md-12 col-sm-12 col-xs-12 text-right">
@@ -680,6 +679,7 @@
 <script src="<?=asset('assets/js/fancybox/jquery.fancybox.js')?>"></script>
 <script src="<?=asset('assets/js/jquery.validate.js')?>"></script>
 <script src="<?=asset('assets/js/cloneData.js')?>"></script>
+<script src="<?=asset('assets/js/jquery.charactercounter.min.js')?>"></script>
 <!--<link src="css/bootstrap-datepicker.css"></link>-->
 <!--<link href="css/bootstrap-datepicker.css" rel="stylesheet">-->
 <!--<script src="js/datepicker/datepicker.min.js"></script>-->
@@ -1013,6 +1013,12 @@
                     $('#add_skills').show();
                 });
             }
+        });
+        $("#edu_description0").characterCounter({
+            limit: 250,
+        });
+        $("#exp_desc0").characterCounter({
+            limit: 250,
         });
     });
 

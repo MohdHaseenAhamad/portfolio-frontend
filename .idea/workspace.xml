@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f559332a-6c02-45c2-b302-6e878a5ea03f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/js/jquery.charactercounter.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +19,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="648" column="65" selection-start-line="648" selection-start-column="56" selection-end-line="648" selection-end-column="65" />
+            <state relative-caret-position="281">
+              <caret line="510" column="65" selection-start-line="510" selection-start-column="65" selection-end-line="510" selection-end-column="65" />
+              <folding>
+                <element signature="e#40519#41290#0#HTML" />
+                <element signature="e#41983#43025#0#HTML" />
+                <element signature="e#43066#43094#0#HTML" />
+                <element signature="e#43135#45050#0#HTML" />
+                <element signature="e#45158#45896#0#HTML" />
+                <element signature="e#45938#46681#0#HTML" />
+                <element signature="e#46735#47526#0#HTML" />
+                <element signature="e#47565#48312#0#HTML" />
+                <element signature="e#48350#49083#0#HTML" />
+                <element signature="e#49134#50234#0#HTML" />
+                <element signature="e#50275#51377#0#HTML" />
+                <element signature="e#51417#52519#0#HTML" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/js/jquery.charactercounter.min.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -38,9 +57,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dob</find>
-      <find>gender</find>
-      <find>country</find>
       <find>city</find>
       <find>postal_code</find>
       <find>btn-box</find>
@@ -68,6 +84,9 @@
       <find>skills_div</find>
       <find>skills_container</find>
       <find>add_skills</find>
+      <find>description0</find>
+      <find>edu_description0</find>
+      <find>exp_desc0</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,6 +261,13 @@
             <path>
               <item name="portfolio-points" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio-points" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio-points" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio-points" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -268,16 +294,17 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\laravel Projects\templates\dynamic-portfolio" />
-      <recent name="E:\laravel Projects\templates\dynamic-portfolio\js" />
-      <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\laravel Projects\portfolio-points\public\assets\js" />
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\js" />
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\js\datepicker" />
       <recent name="E:\laravel Projects\templates\dynamic-portfolio\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio" />
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\js" />
+      <recent name="E:\laravel Projects\templates\dynamic-portfolio\image" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -311,12 +338,12 @@
       <workItem from="1674638558744" duration="15620000" />
       <workItem from="1674811534869" duration="13031000" />
       <workItem from="1674893711673" duration="12476000" />
-      <workItem from="1674910440852" duration="254000" />
+      <workItem from="1674910440852" duration="871000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88432000" />
+    <option name="totallyTimeSpent" value="89049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -409,10 +436,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/jquery.charactercounter.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="648" column="65" selection-start-line="648" selection-start-column="56" selection-end-line="648" selection-end-column="65" />
+        <state relative-caret-position="281">
+          <caret line="510" column="65" selection-start-line="510" selection-start-column="65" selection-end-line="510" selection-end-column="65" />
+          <folding>
+            <element signature="e#40519#41290#0#HTML" />
+            <element signature="e#41983#43025#0#HTML" />
+            <element signature="e#43066#43094#0#HTML" />
+            <element signature="e#43135#45050#0#HTML" />
+            <element signature="e#45158#45896#0#HTML" />
+            <element signature="e#45938#46681#0#HTML" />
+            <element signature="e#46735#47526#0#HTML" />
+            <element signature="e#47565#48312#0#HTML" />
+            <element signature="e#48350#49083#0#HTML" />
+            <element signature="e#49134#50234#0#HTML" />
+            <element signature="e#50275#51377#0#HTML" />
+            <element signature="e#51417#52519#0#HTML" />
+          </folding>
         </state>
       </provider>
     </entry>
