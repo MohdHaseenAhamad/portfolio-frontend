@@ -385,8 +385,7 @@
                                             class="required">*</span></label>
                                     <input type="text" id="exp_business0" class="form-control"
                                            value=" " name="experience_information[0][exp_business]" autocomplete="off"
-                                           data-rule-minlength="2"
-                                           data-rule-maxlength="100">
+                                         >
                                     <span class="material-input"></span></div>
                             </div>
 
@@ -395,7 +394,7 @@
                                     <label class="control-label">Select Country <span class="required">*</span></label>
                                     <select id="exp_country0" class="form-control"
                                             name="experience_information[0][exp_country]"
-                                            data-placeholder="Choose a country..." data-rule-required="true"
+                                            data-placeholder="Choose a country..."
                                     >
                                         <option value="">Select Country</option>
                                         <option value="1">Afghanistan</option>
@@ -602,8 +601,8 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="form-group label-floating">
                                 <label class="control-label">Skill <span class="required">*</span></label>
-                                <input type="text" id="skill" class="form-control" data-rule-required="true"
-                                       name="skill"
+                                <input type="text" id="skill_title0" class="form-control" data-rule-required="true"
+                                       name="skill[0][skill_title]"
                                        data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
                                 <span class="material-input"></span>
                             </div>
@@ -612,7 +611,7 @@
                             <div class="form-group">
                                 <label for="country" class="control-label">Level<span class="required"
                                                                                       aria-required="true">*</span></label>
-                                <select class="form-control select-chosen" name="level" id="level">
+                                <select class="form-control select-chosen" name="skill[0][skill_level]" id="skill_level0">
                                     <option value="">Select Level</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -646,8 +645,8 @@
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="form-group label-floating  is-empty">
                                 <label class="control-label">Hobbies <span class="required">*</span></label>
-                                <input type="text" id="hobbies" class="form-control" data-rule-required="true"
-                                       name="hobbies"
+                                <input type="text" id="hob_title0" class="form-control" data-rule-required="true"
+                                       name="hobbies[0][hob_title]"
                                        data-rule-minlength="2" data-rule-maxlength="100" autocomplete="off">
                                 <span class="material-input"></span>
                             </div>
